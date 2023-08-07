@@ -1,0 +1,343 @@
+-----Comparison of json---------
+
+let obj1 = {
+    name : "person1" ,
+    age : 5
+}
+let obj2 = {
+     age : 5,
+    name : "person1" 
+}
+var flag=true;
+
+if(Object.keys(obj1).length==Object.keys(obj2).length){
+    for(key in obj1) { 
+        if(obj1[key] == obj2[key]) {
+            continue;
+        }
+        else {
+            flag=false;
+            break;
+        }
+    }
+}
+else {
+    flag=false;
+}
+console.log(flag);
+
+______________________________________________________________________________________________________________________
+-------------------fetch api and console the data-----------------------
+
+
+fetch("https://restcountries.com/v3.1/all").then((data)=>{
+    return data.json()
+}).then((data)=>{
+    console.log(data)
+})
+
+
+__________________________________________________________________________________________________________________________
+
+var a 
+var b
+var c
+var d 
+console.log(a)
+console.log(b)
+console.log(c)
+console.log(d)
+
+__________________________________________________________________________________________________________________________
+
+var firstName = "abc"
+var lastName = "def"
+var marStatus = "single"
+var country = "india"
+var age ="26"
+console.log(firstName)
+console.log(lastName)
+console.log(marStatus)
+console.log(country)
+console.log(age)
+
+
+__________________________________________________________________________________________________________________________
+
+
+var num = 34
+console.log(num*num)
+
+
+__________________________________________________________________________________________________________________________
+
+
+var a= 34
+var b =35
+var c 
+c=a
+a=b
+b=c
+console.log(a) 
+console.log(b) 
+
+
+__________________________________________________________________________________________________________________________
+
+
+var a =5
+var b =4
+var c =12
+console.log(a+b+c)
+
+__________________________________________________________________________________________________________________________
+
+var a = 56
+console.log(a*(9/5)+32)
+
+
+__________________________________________________________________________________________________________________________
+
+var a = 56
+console.log(a*0.000621371)
+
+__________________________________________________________________________________________________________________________
+
+
+var match1 = 56
+var match2 = 45
+var match3 = 55
+var match4 = 0
+var match5 = 3
+var match6 = 2
+var match7 = 15
+console.log((match1+match2+match3+match4+match5+match6+match7)/7)
+
+
+__________________________________________________________________________________________________________________________
+
+var test1 = 56
+var test2 = 45
+var test3 = 55
+var test4 = 99
+console.log((test1+test2+test3+test4)/4)
+
+__________________________________________________________________________________________________________________________
+
+
+var num = 6
+var pow = 3
+console.log(num**pow)
+
+__________________________________________________________________________________________________________________________
+
+
+var p = 2000
+var r = 5
+var t = 2
+var solve = p*r*t/100
+console.log(solve)
+
+
+
+__________________________________________________________________________________________________________________________
+
+
+console.log("****")
+console.log("****")
+console.log("****")
+console.log("****")
+
+
+__________________________________________________________________________________________________________________________
+
+
+var r = 5
+var dia = 2*r
+var area = 3.14 *r*r
+var circum = 2*3.14*r
+console.log(dia)
+console.log(area)
+console.log(circum)
+
+
+__________________________________________________________________________________________________________________________
+
+
+var a = 56
+var b = 8
+console.log(a+b)
+console.log(a-b)
+console.log(a*b)
+console.log(a/b)
+
+
+__________________________________________________________________________________________________________________________
+
+var str1 = ""
+var str2 = "#"
+for(let i=1 ;i<=7 ;i++){
+    for(let j=1 ; j<=i ;j++){
+        if(j>=2){
+             
+             str1 = str1 + str2 + "#"
+             console.log(str1)
+             
+            }
+        else{
+
+            console.log(str2)
+        }
+    }
+}
+
+__________________________________________________________________________________________________________________________
+
+
+
+var strArray= ["<option>Jazz</option>",
+,"<option>Blues</option>",
+,"<option>New Age</option>",
+,"<option>Classical</option>",
+,"<option>Opera</option>"]
+for(let i =0 ;i<strArray.length ; i++){
+    console.log(strArray[i])
+}
+
+
+
+__________________________________________________________________________________________________________________________
+
+
+var myarray=[11,22,33,44,55]
+var sum =0
+
+for(let i=0;i<myarray.length;i++){
+     sum=sum+1
+}
+console.log(sum)
+
+__________________________________________________________________________________________________________________________
+
+let food = []
+food.push("rajma","chawal" ,"burger","mango","apple","banana","cholekulche","bhature","bread","samosa","paneer")
+console.log(food)
+
+
+
+__________________________________________________________________________________________________________________________
+
+let food = []
+food.push("rajma","chawal" ,"burger","mango","apple","banana","cholekulche","bhature","bread","samosa","paneer")
+console.log(food[4])
+
+
+______________________________________________________________________________________________________________________
+
+let food = []
+food.push("rajma","chawal" ,"burger","mango","apple","banana","cholekulche","bhature","bread","samosa","paneer")
+console.log(food.length)
+
+
+__________________________________________________________________________________________________________________________
+
+
+let friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran"
+    ];
+
+    function dataHandling(input){
+        for (var i = 0; i < input.length; i++) {
+            
+                if(i==0){
+                    input[i]="Munnabai"
+                } 
+        }
+    }
+        dataHandling(friends);
+        console.log(friends)
+
+
+
+___________________________________________________________________________________________________________________________
+
+
+var friends1 = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran"
+    ];
+    
+    var friends2 = [
+    "Gabbar",
+    "Rajinikanth",
+    "Mass",
+    "Spiderman",
+    "Jeff",
+    "ET"
+    ];
+    
+    function dataHandling(input1 ,input2){
+        var newar = [...input1 , ...input2]
+        console.log(newar)
+    
+    }
+    
+    dataHandling(friends1 , friends2);
+
+
+
+
+    ______________________________________________________________________________________________________________________
+
+
+let arr = [1,3,5]
+let last = arr.pop()
+console.log(last)
+let first = arr.shift()
+console.log(first)
+
+
+
+__________________________________________________________________________________________________________________________
+
+var friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran"
+    ];
+
+ friends.push("deepak")
+console.log(friends)
+friends.unshift("newName")
+console.log(friends)
+
+
+___________________________________________________________________________________________________________________________
+
+var friends = [
+    "Mari",
+    "MaryJane",
+    "CaptianAmerica",
+    "Munnabai",
+    "Jeff",
+    "AAK chandran"
+    ];
+for(let i=0 ;i<friends.length ; i++){
+    console.log("mr "+ friends[i])
+}
+
+__________________________________________________________________________________________________________________________
+
+
